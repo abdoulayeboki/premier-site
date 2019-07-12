@@ -1,0 +1,17 @@
+.page {
+    margin:auto;
+    background: aqua;
+}
+form{
+    position: absolute;
+    left: 30%;
+    top:10%;
+}
+form p{
+    color: red;
+   
+}
+form p.resultat{
+    color:11ff55;
+   
+}

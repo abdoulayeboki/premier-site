@@ -1,0 +1,272 @@
+.page{
+
+    margin: auto;
+
+}
+header{
+    background: #323232;
+    border-bottom: 2px solid white;
+    height:50px;
+    /*position:relative;*/
+    position: absolute;
+    top: 0px;
+    right:0px;
+    left: 0px;
+   
+}
+nav{
+    position: relative;
+    top:-5px;
+    right:30px;
+    text-align:right;
+    font-size:1.1em;
+}
+nav .lemgui{
+    position:absolute;
+    left:-5%;
+    color: #FA9D05;
+    display: inline-block;
+    font-weight: bold;
+    font-size:1.2em; 
+    width: 20%;
+}
+
+nav ul{
+    display: inline-block;
+    text-align: right;
+}
+nav button{
+    background: #FA9D05;
+    display: inline-block;
+    height: 38px;
+    border: none;
+    border-radius:4px 4px 4px 4px;
+  /*  position: relative;
+    bottom:4px;*/
+}
+nav button  a{
+   color: black;
+    text-decoration: none;
+    color: white;
+    font-size:1.2em;
+}
+nav ul li{
+    display: inline-block;
+    margin-right:18px;
+    font-weight: bold; 
+    font-family: Helvetica,sans-serif,Arial;
+}
+nav ul li a{
+
+color: white;
+text-decoration: none;
+opacity: 0.8;
+
+}
+nav ul li a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    }
+ a{
+    color: black;
+    text-decoration: none;
+}
+  .bannier{
+    position:relative;
+    left:-8px;
+    top:43px;
+    }
+  .bannier .description{
+  /*    background: url('../image/fond.jpg') no-repeat;*/
+  position:absolute;
+  top:15%;
+  left:5%;
+  }  
+   .bannier .description h1{
+   color:white;
+   font-weight:bold;
+   font-family:cursive;
+   font-size:2.5em;
+   }
+.bannier .description h2{
+   color:white;
+  /* font-weight:bold;*/
+   font-family:Noto Sans, sans-serif;
+   font-size:1.3em;
+   }
+   .bannier button{
+    width:94px;
+    height:45px;
+    background-color:#FA9D05;
+    position:relative;
+    left:8%;
+    
+    border: none;
+    border-radius:1px;
+   }
+   .bannier button a{
+    font-size:1.2em;
+      text-decoration: none;
+      color:black;
+   }
+.bannier .para {
+    position:relative;
+    top:-150px;
+    text-align:center;
+}
+.bannier .para .paragraphe1,.bannier .para .paragraphe2,.bannier .para .paragraphe3{
+ display: inline-block;
+ width:27%;
+ height:250px;
+ background-color: #FA9D05;
+ margin-right:30px;
+}
+.bannier .para h4{
+    font-size:1.4em;
+    font-family:cursive;
+}
+.bannier .para p{
+    padding: 5px;
+    margin-top:-30px;
+}
+.domaine h4{
+    text-align:center;
+    position:relative;
+    top:-130px;
+    font-size:2em;
+    font-weight:bold;
+    font-family:cursive;
+}
+.domaine .ligne{
+    margin:auto;
+     position:relative;
+    top:-150px;
+    width:70px;
+    height:2px;
+    background-color: #FA9D05;
+}
+.domaine p{
+    text-align:center;
+    position:relative;
+    top:-150px;
+}
+.section1 section article{
+ display: inline-block;
+ width:29%;
+ height:400px;
+ position:relative;
+ left:5%;
+ top:-115px;
+ margin-right:2%;
+ border:solid 1px #969696;
+}
+section article h5{
+ margin-left:3%;
+ font-size:1.1em;
+ font-family:cursive;
+}
+section article p{
+ margin-left:3%;
+}
+.nouvelle h4{
+    text-align:center;
+    position:relative;
+    top:-130px;
+    font-size:2em;
+    font-weight:bold;
+    font-family:cursive;
+}
+.nouvelle .ligne{
+    margin:auto;
+     position:relative;
+    top:-150px;
+    width:70px;
+    height:2px;
+    background-color: #FA9D05;
+}
+.nouvelle p{
+    text-align:center;
+    position:relative;
+    top:-150px;
+}
+
+.section2 section article {
+ display: inline-block;
+ width:17%;
+ height:300px;
+position:relative;
+ left:5%;
+ top:-155px;
+ margin-right:2%;
+ margin-bottom: 10px;
+ border:solid 1px #969696;
+
+}
+.donnateur h4{
+    text-align:center;
+    position:relative;
+    top:-130px;
+    font-size:2em;
+    font-weight:bold;
+    font-family:cursive;
+}
+.donnateur .ligne{
+    margin:auto;
+     position:relative;
+    top:-150px;
+    width:70px;
+    height:2px;
+    background-color: #FA9D05;
+}
+.donnateur p{
+    text-align:center;
+    position:relative;
+    top:-150px;
+}
+.section3 section article {
+ display: inline-block;
+ width:30%;
+ height:200px;
+position:relative;
+ left:5%;
+ top:-155px;
+ margin-right:2%;
+ margin-bottom: 10px;
+ border-radius:170px;
+}
+.section3 section article img{
+    border-radius:170px;
+    
+}
+.section3 section article h5{
+    text-align: center;
+    font-size: 1.3em;
+}
+.contact h4{
+    text-align:center;
+    position:relative;
+    top:-130px;
+    font-size:2em;
+    font-weight:bold;
+    font-family:cursive;
+}
+
+.contact p{
+    text-align:center;
+    position:relative;
+    top:-150px;
+}
+.formulaire form table {
+display: inline-block;
+ width:40%;
+ height:200px;
+ position:relative;
+    top:-130px;
+    left:20%;
+}
+.formulaire form table td{
+    width:40%;
+    height:100px;
+    font-size: 2em;
+}
