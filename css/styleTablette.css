@@ -2,7 +2,7 @@
     header{
         background: #323232;
         border-bottom: 2px solid white;
-        height:50px;
+        height:150px;
         /*position:relative;*/
         position: absolute;
         top: 0%;
@@ -22,16 +22,16 @@ nav{
     top:-1%;
     right:2%;
     text-align:right;
-    font-size:1.1em;
+    font-size:0.9em;
 }
 nav .lemgui{
     position:absolute;
-    left:-5%;
+    left:-3%;
     color: #FA9D05;
     display: inline-block;
     font-weight: bold;
-    font-size:1.2em; 
-    width: 20%;
+    font-size:1em; 
+    width: 15%;
 }
 
 nav ul{
@@ -41,7 +41,7 @@ nav ul{
 nav button{
     background: #FA9D05;
     display: inline-block;
-    height: 38px;
+    height: 28px;
     border: none;
     border-radius:4px 4px 4px 4px;
   /*  position: relative;
@@ -51,11 +51,11 @@ nav button  a{
    color: black;
     text-decoration: none;
     color: white;
-    font-size:1.2em;
+    font-size:1em;
 }
 nav ul li{
     display: inline-block;
-    margin-right:18px;
+    margin-right:8px;
     font-weight: bold; 
     font-family: Helvetica,sans-serif,Arial;
 }
@@ -77,39 +77,39 @@ nav ul li a:hover{
 }
   .bannier{
     position:relative;
-    left:-8px;
-    top:43px;
+    left:-5px;
+    top:23px;
     }
   .bannier .description{
   /*    background: url('../image/fond.jpg') no-repeat;*/
   position:absolute;
-  top:15%;
-  left:5%;
+  top:8%;
+  left:2%;
   }  
    .bannier .description h1{
    color:white;
    font-weight:bold;
    font-family:cursive;
-   font-size:2.5em;
+   font-size:1.3em;
    }
 .bannier .description h2{
    color:white;
   /* font-weight:bold;*/
    font-family:Noto Sans, sans-serif;
-   font-size:1.3em;
+   font-size:1em;
    }
    .bannier button{
-    width:94px;
-    height:45px;
+    width:64px;
+    height:35px;
     background-color:#FA9D05;
     position:relative;
-    left:8%;
+    left:5%;
     
     border: none;
     border-radius:1px;
    }
    .bannier button a{
-    font-size:1.2em;
+    font-size:1em;
       text-decoration: none;
       color:black;
    }
@@ -120,24 +120,24 @@ nav ul li a:hover{
 }
 .bannier .para .paragraphe1,.bannier .para .paragraphe2,.bannier .para .paragraphe3{
  display: inline-block;
- width:27%;
- height:250px;
+ width:30%;
+ height:180px;
  background-color: #FA9D05;
- margin-right:30px;
+ margin-right:15px;
 }
 .bannier .para h4{
-    font-size:1.4em;
+    font-size:1em;
     font-family:cursive;
 }
 .bannier .para p{
-    padding: 5px;
-    margin-top:-30px;
+    padding: 2px;
+    margin-top:-10px;
 }
 .domaine h4{
     text-align:center;
     position:relative;
     top:-130px;
-    font-size:2em;
+    font-size:1.2em;
     font-weight:bold;
     font-family:cursive;
 }
@@ -145,8 +145,8 @@ nav ul li a:hover{
     margin:auto;
      position:relative;
     top:-150px;
-    width:70px;
-    height:2px;
+    width:40px;
+    height:0px;
     background-color: #FA9D05;
 }
 .domaine p{
@@ -156,101 +156,101 @@ nav ul li a:hover{
 }
 .section1 section article{
  display: inline-block;
- width:29%;
- height:400px;
+ width:40%;
+ height:50%;
  position:relative;
  left:5%;
- top:-115px;
- margin-right:2%;
+ top:-95px;
+ margin-right:1%;
  border:solid 1px #969696;
 }
 section article h5{
- margin-left:3%;
- font-size:1.1em;
+ margin-left:1%;
+ font-size:1em;
  font-family:cursive;
 }
 section article p{
- margin-left:3%;
+ margin-left:1%;
 }
 .nouvelle h4{
     text-align:center;
     position:relative;
-    top:-130px;
-    font-size:2em;
+    top:-100px;
+    font-size:1em;
     font-weight:bold;
     font-family:cursive;
 }
 .nouvelle .ligne{
     margin:auto;
      position:relative;
-    top:-150px;
-    width:70px;
-    height:2px;
+    top:-100px;
+    width:40px;
+    height:0px;
     background-color: #FA9D05;
 }
 .nouvelle p{
     text-align:center;
     position:relative;
-    top:-150px;
+    top:-100px;
 }
 
 .section2 section article {
  display: inline-block;
- width:17%;
- height:300px;
+ width:40%;
+ height:20%;
 position:relative;
  left:5%;
- top:-155px;
- margin-right:2%;
- margin-bottom: 10px;
+ top:-100px;
+ margin-right:1%;
+ margin-bottom: 1%;
  border:solid 1px #969696;
 
 }
 .donnateur h4{
     text-align:center;
     position:relative;
-    top:-130px;
-    font-size:2em;
+    top:-100px;
+    font-size:1em;
     font-weight:bold;
     font-family:cursive;
 }
 .donnateur .ligne{
     margin:auto;
      position:relative;
-    top:-150px;
-    width:70px;
-    height:2px;
+    top:-100px;
+    width:40px;
+    height:0px;
     background-color: #FA9D05;
 }
 .donnateur p{
     text-align:center;
     position:relative;
-    top:-150px;
+    top:-100px;
 }
 .section3 section article {
  display: inline-block;
- width:30%;
- height:200px;
+ width:40%;
+ /* height:100px; */
 position:relative;
  left:5%;
- top:-155px;
- margin-right:2%;
- margin-bottom: 10px;
- border-radius:170px;
+ top:-105px;
+ margin-right:1%;
+ margin-bottom: 05px;
+ border-radius:100px;
 }
 .section3 section article img{
-    border-radius:170px;
+    border-radius:150px;
     
 }
 .section3 section article h5{
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 .contact h4{
     text-align:center;
     position:relative;
-    top:-130px;
-    font-size:2em;
+    top:-100px;
+    font-size:1em;
     font-weight:bold;
     font-family:cursive;
 }
@@ -258,14 +258,14 @@ position:relative;
 .contact p{
     text-align:center;
     position:relative;
-    top:-150px;
+    top:-100px;
 }
 form table tr{
-    display: inline-block;
+    /* display: inline-block; */
     position: relative;
     top:-100px;
-    left: 10%;
-    width:45%;
+     left: 16%; 
+    width:35%;
     margin: auto;
     
     }
@@ -273,18 +273,18 @@ form table tr td input{
     width: 150%;
     height:44px;
     margin-bottom: 25px;
-    font-size: 1.3em;
+    font-size: 1em;
     }
     form table tr td textarea{
-        width: 280%;
-        height:90px;
+        width: 190%;
+        height:145px;
         font-size: 1.3em;
         }
         form table  button{
            background-color: #FA9D05;
            width: 1100px;
            height: 40px;
-           font-size: 2em;
+           font-size: 1em;
         }
         form table tr td input:hover,form table tr td textarea:hover{
             border: solid 1px #FA9D05;
@@ -294,27 +294,28 @@ form table tr td input{
             background-color: #dA9a05;
         }
         footer{
-            height: 250px;
+            height: 350px;
             background-color:  #323232;
         }
         footer  ul{
             display: inline-block;
-            width: 28%;
+            width: 40%;
             position: relative;
-            left: 5%;
+            left: 15%;
             top: 50px;
             color: white;
         }
         footer  ul li{
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             list-style: none;
         }
         footer input{
-            width: 198px;
-            height: 30px;
+            width: 158px;
+            height: 20px;
         }
         footer button{
-            width: 118px;
-            height: 40px;
+            margin-top: 1%;
+            width: 88px;
+            height: 50px;
             background-color: rgb(99, 238, 99);
         }

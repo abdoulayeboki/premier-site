@@ -1,11 +1,16 @@
 .page {
     margin:auto;
-    background: aqua;
+    /* background: aqua; */
 }
 form{
     position: absolute;
-    left: 30%;
-    top:10%;
+    left: 10%;
+    top:5%;
+    right: 10%;
+    background: cadetblue;
+    width: 70%;
+    height: 80%;
+ 
 }
 form p{
     color: red;
@@ -15,3 +20,16 @@ form p.resultat{
     color:11ff55;
    
 }
+/* form  table tr{
+font-size: 1.2em;
+font-weight: bold;
+height:54px;
+}
+form  table tr td input{
+    height:28px;
+  
+}
+form  table tr td input[checkbox]{
+    height:28px;
+  
+} */
