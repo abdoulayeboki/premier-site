@@ -2,48 +2,44 @@
     header{
         background: #323232;
         border-bottom: 2px solid white;
-        height:50px;
-        /*position:relative;*/
-        position: absolute;
-        top: 0%;
-        right:0%;
-        left: 0%;
+        height:40%;
+        margin-bottom:-3.5%;
+   
        
     }
 
-.page{
-
-    margin: auto;
-
-}
-
 nav{
-    position: relative;
+    /* position: relative;
     top:-1%;
-    right:2%;
+    right:2%; */
     text-align:right;
-    font-size:1.1em;
+    font-size:0.9em;
+   
 }
 nav .lemgui{
-    position:absolute;
-    left:-7%;
+    position: relative;
+    right:2%; 
+    font-size:12px;
     color: #FA9D05;
     display: inline-block;
     font-weight: bold;
-    font-size:1.1em; 
-    width: 20%;
+    /* width: 13%; */
+
 }
 
 nav ul{
     display: inline-block;
     text-align: right;
+    margin-right: 2px;
 }
 nav button{
     background: #FA9D05;
     display: inline-block;
-    height: 38px;
+    height: 25px;
     border: none;
-    border-radius:4px 4px 4px 4px;
+    border-radius:2px 2px 2px 2px;
+    margin-bottom: 2px;
+    margin-right: 2px;
   /*  position: relative;
     bottom:4px;*/
 }
@@ -51,11 +47,10 @@ nav button  a{
    color: black;
     text-decoration: none;
     color: white;
-    font-size:1.2em;
+    font-size:1em;
 }
 nav ul li{
     display: inline-block;
-    margin-right:18px;
     font-weight: bold; 
     font-family: Helvetica,sans-serif,Arial;
 }
@@ -77,241 +72,244 @@ nav ul li a:hover{
 }
   .bannier{
     position:relative;
-    left:-8px;
-    top:43px;
+    left:-5px;
+    top:23px;
     }
   .bannier .description{
   /*    background: url('../image/fond.jpg') no-repeat;*/
   position:absolute;
-  top:15%;
-  left:5%;
+  top:8%;
+  left:2%;
   }  
    .bannier .description h1{
    color:white;
    font-weight:bold;
    font-family:cursive;
-   font-size:2.5em;
+   font-size:1.3em;
    }
 .bannier .description h2{
    color:white;
   /* font-weight:bold;*/
    font-family:Noto Sans, sans-serif;
-   font-size:1.3em;
+   font-size:1em;
    }
    .bannier button{
-    width:94px;
-    height:45px;
+    width:54px;
+    height:25px;
     background-color:#FA9D05;
     position:relative;
-    left:8%;
+    left:5%;
     
     border: none;
     border-radius:1px;
    }
    .bannier button a{
-    font-size:1.2em;
+    font-size:1em;
       text-decoration: none;
       color:black;
    }
 .bannier .para {
     position:relative;
-    top:-150px;
+    top:-310px;
     text-align:center;
 }
 .bannier .para .paragraphe1,.bannier .para .paragraphe2,.bannier .para .paragraphe3{
  display: inline-block;
- width:27%;
- height:250px;
+ width:70%;
+ height:20%;
  background-color: #FA9D05;
- margin-right:30px;
+ margin-bottom:15px;
 }
 .bannier .para h4{
-    font-size:1.4em;
+    font-size:1em;
     font-family:cursive;
 }
 .bannier .para p{
-    padding: 5px;
-    margin-top:-30px;
+    padding: 2px;
+    margin-top:-10px;
 }
 .domaine h4{
     text-align:center;
     position:relative;
-    top:-130px;
-    font-size:2em;
+    top:-300px;
+    font-size:1em;
     font-weight:bold;
     font-family:cursive;
 }
 .domaine .ligne{
     margin:auto;
      position:relative;
-    top:-150px;
-    width:70px;
-    height:2px;
+    top:-300px;
+    width:10px;
+    height:0px;
     background-color: #FA9D05;
 }
 .domaine p{
     text-align:center;
     position:relative;
-    top:-150px;
+    top:-300px;
 }
 .section1 section article{
  display: inline-block;
- width:29%;
- height:400px;
+ width:90%;
+ height:50%;
  position:relative;
  left:5%;
- top:-115px;
- margin-right:2%;
+ top:-275px;;
+ margin-bottom:2%;
  border:solid 1px #969696;
 }
 section article h5{
- margin-left:3%;
- font-size:1.1em;
+ margin-left:1%;
+ font-size:1em;
  font-family:cursive;
 }
 section article p{
- margin-left:3%;
+ margin-left:1%;
 }
 .nouvelle h4{
     text-align:center;
     position:relative;
-    top:-130px;
-    font-size:2em;
+    top:-300px;
+    font-size:1em;
     font-weight:bold;
     font-family:cursive;
 }
 .nouvelle .ligne{
     margin:auto;
      position:relative;
-    top:-150px;
-    width:70px;
-    height:2px;
+    top:-300px;
+    width:40px;
+    height:0px;
     background-color: #FA9D05;
 }
 .nouvelle p{
     text-align:center;
     position:relative;
-    top:-150px;
+    top:-300px;
 }
 
 .section2 section article {
  display: inline-block;
- width:17%;
- height:300px;
+ width:90%;
+ height:20%;
 position:relative;
  left:5%;
- top:-155px;
- margin-right:2%;
- margin-bottom: 10px;
+ top:-300px;
+ margin-bottom: 1%;
  border:solid 1px #969696;
 
 }
 .donnateur h4{
     text-align:center;
     position:relative;
-    top:-130px;
-    font-size:2em;
+    top:-300px;
+    font-size:1em;
     font-weight:bold;
     font-family:cursive;
 }
 .donnateur .ligne{
     margin:auto;
      position:relative;
-    top:-150px;
-    width:70px;
-    height:2px;
+    top:-300px;
+    width:40px;
+    height:0px;
     background-color: #FA9D05;
 }
 .donnateur p{
     text-align:center;
     position:relative;
-    top:-150px;
+    top:-300px;
 }
 .section3 section article {
  display: inline-block;
- width:30%;
- height:200px;
+ width:90%;
+ /* height:100px; */
 position:relative;
- left:5%;
- top:-155px;
- margin-right:2%;
- margin-bottom: 10px;
- border-radius:170px;
+ top:-305px;
+ margin-right:1%;
+ margin-bottom: 05px;
+ border-radius:100px;
 }
 .section3 section article img{
-    border-radius:170px;
-    
+    border-radius:150px;
 }
 .section3 section article h5{
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 .contact h4{
     text-align:center;
-    /* position:relative;
-    top:-130px; */
-    font-size:2em;
+    position:relative;
+    top:-300px;
+    font-size:1em;
     font-weight:bold;
     font-family:cursive;
 }
 
 .contact p{
     text-align:center;
-    /* position:relative;
-    top:-150px; */
+    position:relative;
+    top:-300px;
+    
 }
-    .formulaire form  {
-       margin-top: 5%;
-        margin-right:5%;
-        margin-left:5%; 
-    }
-    form  .partie1,   form .partie2{
-        display: inline-block;
-        width:45%;
-        margin-right:3%;
-        padding-top:0px;
-    }
+.formulaire form  {
+    /* margin-top:-5%;
+     margin-right:5%;
+     margin-left:5%;  */
+     position:relative;
+     top:-300px;
+     
+ }
+ form  .partie1,   form .partie2{
+     display: inline-block;
+     width:85%;
+     margin-right:3%;
+     padding-top:0px;
+ }
 
-    form  .partie1 input{
-        width: 100%;
-        height: 35px;
-        margin-bottom:25px;
-       
-    }
-    form  .partie2 textarea{
-        width: 100%;
-        height: 135px;
-        margin-bottom:15px;
-       
-    }
-    form  .partie2 input{
-        width: 100%;
-        height: 45px;
-        background-color:#ff9494;
-    }
-
+ form  .partie1 input{
+     width: 100%;
+     height: 35px;
+     margin-bottom:25px;
+    
+ }
+ form  .partie2 textarea{
+     width: 100%;
+     height: 135px;
+     margin-bottom:15px;
+    
+ }
+ form  .partie2 input{
+     width: 100%;
+     height: 45px;
+     background-color:#ff9494;
+ }
         footer{
-            height: 250px;
+            height: 650px;
             background-color:  #323232;
         }
         footer  ul{
             display: inline-block;
-            width: 28%;
-            /* position: relative;
-            left: 5%;
-            top: 50px; */
+            width: 40%;
+            position: relative;
+            left: 15%;
+            top: 50px;
             color: white;
         }
         footer  ul li{
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             list-style: none;
         }
         footer input{
-            width: 198px;
-            height: 30px;
+            width: 100%;
+            height: 20px;
+            margin-bottom:2%;
         }
         footer button{
-            width: 118px;
+            margin-top: 1%;
+            width: 90%;
+            margin-bottom:2%;
             height: 40px;
             background-color: rgb(99, 238, 99);
         }

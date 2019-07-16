@@ -6,8 +6,9 @@
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
-        <link rel="stylesheet" media="screen and (min-width:1000px)" href="css/style.css"/>
-        <link rel="stylesheet" media="screen and (min-width:600px) and (max-width:999px) " href="css/styleTablette.css"/>
+        <link rel="stylesheet" media="screen and (min-width:1150px)" href="css/style.css"/>
+        <link rel="stylesheet" media="screen and (min-width:600px) and (max-width:1150px) " href="css/styleTablette.css"/>
+        <link rel="stylesheet" media="screen and (max-width:600px) " href="css/stylephone.css"/>
         
     </head>
     <body>
@@ -145,14 +146,16 @@ Some quick example text to build on the card title and make up the bulk of the c
                 <div class="formulaire">
                     <form method="post" action="#">
                        
-                           <table> <tr>
-                                <td><input type="text" name="nom-prenom" placeholder="nom et prenom"></td></tr>
-                                <tr><td><input type="text" name="email" placeholder="email"></td></tr>
-                                <tr><td><input type="text" name="tel" placeholder="numero telephon"></td></tr></table>
-                           <table>
-                            <tr><td><textarea name="txt" ></textarea></td></tr>
-                                <tr><td><input type="text" value="envoyer"></td></tr>
-                            </table> 
+  
+                             <div class="partie1">
+                                <input type="text" name="nom-prenom" placeholder="nom et prenom">
+                                <input type="text" name="email" placeholder="email">
+                                <input type="text" name="tel" placeholder="numero telephon">
+                              </div> 
+                              <div class="partie2">
+                                <textarea name="txt" ></textarea>
+                                <input type="submit" value="envoyer">
+                              </div>
                         
                     </form>
                 </div>
