@@ -1,7 +1,7 @@
 <?php
-$nombre1=$_POST['nombre1'];
-$nombre2=$_POST['nombre2'];
-$operateur=$_POST['operateur'];
+$nombre1=isset($_POST['nombre1'])?$_POST['nombre1']:null;
+$nombre2=isset($_POST['nombre2'])?$_POST['nombre2']:null;
+$operateur=isset($_POST['operateur'])?$_POST['operateur']:null;
  $resultat;
 ?>
 
@@ -9,10 +9,32 @@ $operateur=$_POST['operateur'];
 <html>
 <meta charset="utf-8"/>
 <title>calculatrice</title>
-<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="css/style.css"/>
 <body>
 <div class="page">
 <form method="POST" action="calculatrice.php">
+<div class="resultat"><label><?php 
+if(is_numeric($nombre1) && is_numeric($nombre2)){
+    switch($operateur){
+        case '+':$resultat=$nombre1+$nombre2;
+        break;
+        case '-':$resultat=$nombre1-$nombre2;
+        break;
+        case '*':$resultat=$nombre1*$nombre2;
+        break;
+        case '/':
+            if($nombre2==0)
+             echo("Impossible de  diviser par 0 ");
+            else $resultat=$nombre1/$nombre2;
+        break;
+        case '%':
+        if($nombre2==0) echo("Impossible de  diviser  par 0 ");
+        else $resultat=$nombre1%$nombre2;
+        break;
+    }
+   if($resultat) echo $nombre1." ".$operateur." ".$nombre2." = ".$resultat;
+}
+?></label> </div>
 <label>Nombre 1</label>
 <input type="text" name="nombre1" value="<?php echo $nombre1 ?>"/>
 <p>
@@ -41,31 +63,10 @@ else if($nombre2=='' || !(is_numeric($_POST['nombre2'])))
 </select><p>
 <?php ?> </p> <br>
 <button type="submit">calculer</button>
-<div class="resultat"><?php 
-if(is_numeric($nombre1) && is_numeric($nombre2)){
-    switch($operateur){
-        case '+':$resultat=$nombre1+$nombre2;
-        break;
-        case '-':$resultat=$nombre1-$nombre2;
-        break;
-        case '*':$resultat=$nombre1*$nombre2;
-        break;
-        case '/':
-            if($nombre2==0)
-             echo("erreur : division par 0 : division impossible");
-            else $resultat=$nombre1/$nombre2;
-        break;
-        case '%':
-        if($nombre2==0) echo("erreur : division par 0 modulo impossible");
-        else $resultat=$nombre1%$nombre2;
-        break;
-    }
-    echo $nombre1." ".$operateur." ".$nombre2." = ".$resultat;
-}
-?> </div>
+
 
 </table>
 </form>
 </div>
 </body>
-</html>+
+</html>
