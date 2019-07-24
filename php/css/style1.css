@@ -1,0 +1,44 @@
+body{
+    background-color: #ede4e5;
+}
+form  {
+    margin-top: 2%;
+     margin-right:2%;
+     margin-left:2%;  
+     margin: auto;
+     width:94%;
+     background-color: darkgrey;
+     padding: 2%;
+     border-radius:4%;
+ }
+
+ form   input[type="text"]{
+     width: 40%;
+     height: 25px;
+     margin-bottom:25px;
+     font-size:1.2em;
+    
+ }
+ form   input[type="radio"], form   input[type="checkbox"],form select{
+    margin-bottom:25px;
+   
+}
+ form   textarea{
+    width: 90%;
+    height: 95px;
+    margin-bottom:25px;
+    font-size:1.2em;
+   
+}
+ .tabdynamique{
+     color: darkblue;
+ }
+ 
+ form   button[type="submit"]{
+    width: 20%;
+    height: 45px;
+    margin-bottom:25px;
+    background:#4aaaff;
+    border-radius: 10px;
+   
+}
