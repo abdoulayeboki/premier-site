@@ -68,35 +68,7 @@ fclose($f);
                 <td><input type="submit" value="envoyer" ></td>
             </tr>
         </table>
-        </form>
-        <div class="t2">
-        <table>
-        <thead>
-                <th>matricule</th>
-                <th>prenom</th>
-                <th>nom</th>
-                <th>salaire</th>
-                <th>pays</th>
-                <th>Email</th>
-                <th>action</th>
-            </thead>
-            <tbody>
-                <?php
-                    foreach($employers as $cle =>$ligne){ ?>
-
-                 <tr>
-                 <td><?php echo $ligne['matricule'] ?></td>
-                  <td><?php echo $ligne['prenom'] ?></td>
-                  <td><?php echo $ligne['nom'] ?></td>
-                  <td><?php echo $ligne['salaire'] ?></td>
-                  <td><?php echo $ligne['pays'] ?></td>
-                  <td><?php echo $ligne['email'] ?></td>
-                  <td><a href="supprimerEmployer.php?cle=<?php echo $cle ?>">supprimer</a></td>
-                  <td><a href="editeEmployer.php">editer</a></td>
-                 </tr>
-                 <?php   } ?>
-            </tbody>
-        </table></div>
+</form>
      </div>
 </body>
 </html> 

@@ -56,9 +56,9 @@ $tab=array(
      <span class="page">
         <form method="post" action="personnes.php">
                        
-        <table >
+        <table ><caption>Page d'enrégistrement</caption>
             <tr>
-                 <td>Prenom</td>
+                 <td>Prenom  <span class="erreur"> * </span></td>
                  <td><input type="text" name="prenom" placeholder="Prenom" value="<?php echo $prenom ?>">
                 <span class="erreur"><?php if(!isset($prenom)){}
                   else if( $prenom==""){
@@ -66,14 +66,14 @@ $tab=array(
                     $enregistrement=false;
                   }
                    
-                   else if(!preg_match("#^[a-zA-zéàâèûôîç ]{2,25}$#",$prenom)){
+                   else if(!preg_match("#^[a-zA-Zéàâèûôîç ]{2,25}$#",$prenom)){
                     echo "le nom n'est pas valide";
                     $enregistrement=false;
                 }  ?></span> 
             </td>
             </tr>
             <tr>
-                <td>Nom</td>
+                <td>Nom  <span class="erreur"> * </span> </td>
                 <td><input type="text" name="nom" placeholder="Nom" value="<?php echo $nom ?>">
                 <span class="erreur"><?php if(!isset($nom)){}
                   else if( $nom==""){
@@ -88,15 +88,15 @@ $tab=array(
             </td>
             </tr>
             <tr>
-                <td>Genre</td>
+                <td>Genre  <span class="erreur"> * </span></td>
                 <td class="bouton">
-                    <input type="radio" name="genre" value="masculin"
-                     <?php if($genre=="masculin") echo "checked" ?>/><label>masculin</label>
-                    <input type="radio" name="genre" value="feminin"
+                    <input type="radio" id="masculin" name="genre" value="masculin"
+                     <?php if($genre=="masculin") echo "checked" ?>/><label for="masculin" >masculin</label>
+                    <input type="radio" id="feminin" name="genre" value="feminin"
                     <?php if($genre=="feminin") echo "checked" ?>
-                    /><label>Feminin</label>
+                    /><label for="feminin"> Feminin</label>
                     <span class="erreur"><?php if(!isset($genre)){}
-                  else if( $genre==""){
+                   if( $genre==on){
                     echo  $obligatoir;
                     $enregistrement=false;
                   }
@@ -104,7 +104,7 @@ $tab=array(
                 </td>
             </tr>
             <tr>
-                <td>Pays</td>
+                <td>Pays  <span class="erreur"> * </span> </td>
                 <td class="select"><select name="pays">
                     <option value="senegal" <?php if($pays=="senegal") echo "selected" ?>>Senegal</option>
                     <option value="usa" <?php if($pays=="usa") echo "selected" ?>>USA</option>
@@ -115,7 +115,7 @@ $tab=array(
                 </td>
             </tr>
             <tr>
-                <td>Langage</td>
+                <td>Langage  <span class="erreur"> * </span> </td>
                 <td><input type="checkbox" id="php" value="php" name="php"
                 <?php if($php) echo "checked" ?>><label for="php">PHP</label>
                     <input type="checkbox" id="java" value="java" name="java"
@@ -130,7 +130,7 @@ $tab=array(
                 </td>
             </tr>
             <tr>
-                <td>Email</td>
+                <td>Email  <span class="erreur"> * </span></td>
                 <td><input type="text" name="email" placeholder="email" value="<?php echo $email ?>">
                 <span class="erreur"><?php if(!isset($email)){}
                  
@@ -146,7 +146,7 @@ $tab=array(
             </td>
             </tr>
             <tr>
-                <td>Date de naissance</td>
+                <td>Date de naissance  <span class="erreur"> * </span></td>
                 <td><input type="text" name="date" placeholder="12/07/1995" value="<?php echo $date ?>">
                 <span class="erreur"><?php if(!isset($date)){}
                   else if( $date==""){
@@ -159,8 +159,8 @@ $tab=array(
                    }?> </span> </td>
             </tr>
             <tr>
-                <td>Comentaire</td>
-                <td><textarea name="commentaire" ><?php echo $commentaire ?></textarea>
+                <td>Comentaire  <span class="erreur"> * </span> </td>
+                <td><textarea name="commentaire" col="22" rows="4" ><?php echo $commentaire ?></textarea>
                 <span class="erreur"><?php if(!isset($commentaire)){}
                   else if( $commentaire==""){
                    echo  $obligatoir  ;
@@ -169,7 +169,8 @@ $tab=array(
             </tr>
          </table> 
              <button type="submit">Enregistrer</button>    
-             <table border="1">
+             <div class="t2">
+             <table>
             <thead>
                 <th>Prenom</th>
                 <th>Nom</th>
@@ -219,7 +220,7 @@ $tab=array(
                </tr>
                 <?php } } ?>
             </tbody>
-        </table>   
+        </table>   </div>
         </form>
         
 </span>
