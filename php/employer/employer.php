@@ -97,7 +97,7 @@ fclose($f);
                   <td><?php echo $ligne['date'] ?></td>
                   <td><?php echo $ligne['email'] ?></td>
                   <td><a href="supprimerEmployer.php?cle=<?php echo $cle ?>">supprimer</a></td>
-                  <td><a href="editeEmployer.php?cle=<?php echo $cle ?>">editer</a></td>
+                  <td><a href="editeEmployer.php?cle=<?php echo $cle ?>">editer</a></td> 
                  </tr>
                  <?php   } ?>
             </tbody>

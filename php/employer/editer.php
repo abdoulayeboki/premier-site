@@ -25,7 +25,9 @@ $employers[]=json_decode($ligne,true);
 }
 //var_dump($employers);
 fclose($f);
-unset($employers[$cle]);
+$f=fopen("employer.txt",'w');
+fclose($f);
+//unset($employers[$cle]);
 $employers[$cle]=array(
     "matricule"=>$matricule,
     "prenom"=>$prenom,
