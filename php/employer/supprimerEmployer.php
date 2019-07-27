@@ -6,7 +6,6 @@ while(($ligne=fgets($f))){
 $employers[]=json_decode($ligne,true);
 }
 fclose($f);
-
 unset($employers[$cle]);
 $data="";
 
