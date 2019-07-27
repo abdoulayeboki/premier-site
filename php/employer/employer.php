@@ -7,13 +7,16 @@ $employer['matricule']=trim($_POST['matricule']);
  $employer['prenom']=trim($_POST['prenom']);
  $employer['nom']=trim($_POST['nom']);
  $employer['salaire']=trim($_POST['salaire']);
- $employer['pays']=trim($_POST['pays']);
+ $employer['tel']=trim($_POST['tel']);
+ $employer['date']=trim($_POST['date']);
  $employer['email']=trim($_POST['email']);
+ // ecrire sur le fichier
  $f = fopen("employer.txt","a+");
 fwrite($f,json_encode($employer)."\n");
 fclose($f);
 }
 
+//recuperer le contenudu  du fichier dans un tableau 
 $employers=array();
 $f = fopen("employer.txt","r");
 while(($ligne=fgets($f))){
@@ -47,11 +50,7 @@ fclose($f);
             <tr>
                 <td>Prenom</td>
                 <td><input type="text" name="prenom" /></td>
-            </tr>
-            <tr>
-                <td>Date de naissance</td>
-                <td><input type="text" name="date" /></td>
-            </tr>    
+            </tr>   
             <tr>
                 <td>Salaire</td>
                 <td><input type="text" name="salaire" ></td>
@@ -60,6 +59,10 @@ fclose($f);
                 <td>Telephon</td>
                 <td><input type="text" name="tel" ></td>
             </tr>
+            <tr>
+                <td>Date de naissance</td>
+                <td><input type="text" name="date" /></td>
+            </tr> 
             <tr>
                 <td>Email</td>
                 <td><input type="text" name="email" ></td>
@@ -76,7 +79,8 @@ fclose($f);
                 <th>prenom</th>
                 <th>nom</th>
                 <th>salaire</th>
-                <th>pays</th>
+                <th>telephon</th>
+                <th>Date de naissance</th>
                 <th>Email</th>
                 <th>action</th>
             </thead>
@@ -89,10 +93,11 @@ fclose($f);
                   <td><?php echo $ligne['prenom'] ?></td>
                   <td><?php echo $ligne['nom'] ?></td>
                   <td><?php echo $ligne['salaire'] ?></td>
-                  <td><?php echo $ligne['pays'] ?></td>
+                  <td><?php echo $ligne['tel'] ?></td>
+                  <td><?php echo $ligne['date'] ?></td>
                   <td><?php echo $ligne['email'] ?></td>
                   <td><a href="supprimerEmployer.php?cle=<?php echo $cle ?>">supprimer</a></td>
-                  <td><a href="editeEmployer.php">editer</a></td>
+                  <td><a href="editeEmployer.php?cle=<?php echo $cle ?>">editer</a></td>
                  </tr>
                  <?php   } ?>
             </tbody>

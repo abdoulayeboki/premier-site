@@ -11,7 +11,7 @@
  $email=isset($_POST['email'])?$_POST['email']:null;
  $date=isset($_POST['date'])?$_POST['date']:null;
  $commentaire=isset($_POST['commentaire'])?$_POST['commentaire']:null;
- $obligatoir="champ obligatoir";
+ $obligatoir="champ obligatoire";
  $enregistrement=true;
   $tableau=array(
       array(
