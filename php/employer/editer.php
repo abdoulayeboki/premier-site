@@ -43,5 +43,5 @@ $f = fopen("employer.txt","a+");
  fwrite($f,$data);
  fclose($f);
  //redirigons vers employer.php
- header("location:employer.php");
+ header("location:afficherEmployer.php");
 ?>
