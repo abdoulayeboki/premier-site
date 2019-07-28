@@ -1,7 +1,7 @@
 <?php
 $employer=array();
 $enregistrement;
-$obligatoir="champ obligatoire";
+$obligatoir="obligatoire!";
 if(isset($_POST['matricule']) && isset($_POST['prenom']) &&
  isset($_POST['nom']) && isset($_POST['salaire']) && 
  isset($_POST['tel']) && isset($_POST['email']) ){
@@ -18,16 +18,10 @@ $employer['matricule']=trim($_POST['matricule']);
 
 }
 
-//recuperer le contenudu  du fichier dans un tableau 
-$employers=array();
-$f = fopen("employer.txt","r");
-while(($ligne=fgets($f))){
-$employers[]=json_decode($ligne,true);
-}
-fclose($f);
 
 
 ?>
+
  <!DOCTYPE html>
 <html>
 <head>
@@ -38,19 +32,20 @@ fclose($f);
     </head>
     <body>
      <div class="page">
-        <form method="post" action="employer.php">
-                       
+       <div class="form t1" >
+        <form method="post" action="employer.php">               
         <table >
+        <caption> Page d'enrégistrement des employers  </caption>
             <tr>
                 <td>Matricule</td>
                 <td><input type="text" name="matricule" readonly="true" value="<?php 
-                $employers=array();
-                $f = fopen("employer.txt","r+");
+                $nbrE=array();
+                $f = fopen("employer.txt","r");
                 while(($ligne=fgets($f))){
-                $employers[]=json_decode($ligne,true);
+                $nbrE[]=json_decode($ligne,true);
                 }
                 fclose($f);
-                $nbr=count($employers)+1;
+                $nbr=count($nbrE)+1;
                 $c=sprintf("%05d",$nbr);
                 echo "EM-".$c;
                 ?>"/></td>
@@ -59,12 +54,12 @@ fclose($f);
                 <td>Nom</td>
                 <td><input type="text" name="nom"/>
                 <span class="erreur"><?php if(!isset($employer['nom'])){}
-                  else if( $employer['nom']==""){
+                  else if( empty($employer['nom'])){
                     echo  $obligatoir;
                     $enregistrement=false;
                   }
                    else if(!preg_match("#^[a-zA-zéàâèûôîç]{2,25}$#",$employer['nom'])){
-                       echo "le nom n'est pas valide";
+                       echo "non valide";
                        $enregistrement=false;
                    }
               ?></span>
@@ -74,12 +69,12 @@ fclose($f);
                 <td>Prenom</td>
                 <td><input type="text" name="prenom" /> 
                 <span class="erreur"><?php if(!isset($employer['prenom'])){}
-                  else if( $employer['prenom']==""){
+                  else if( empty($employer['prenom'])){
                     echo  $obligatoir;
                     $enregistrement=false;
                   }
                    else if(!preg_match("#^[a-zA-Zéàâèûôîç ]{2,25}$#",$employer['prenom'])){
-                       echo "le prenom n'est pas valide";
+                       echo "non valide";
                        $enregistrement=false;
                    }
               ?></span></td>
@@ -89,16 +84,16 @@ fclose($f);
                 <td>Salaire</td>
                 <td><input type="text" name="salaire" >
                 <span class="erreur"><?php if(!isset($employer['salaire'])){}
-                  else if( $employer['salaire']==""){
+                  else if( empty($employer['salaire'])){
                     echo  $obligatoir;
                     $enregistrement=false;
                   }
                    else if(!preg_match("#^[0-9]{5,7}$#",$employer['salaire'])){
-                       echo "le salaire n'est pas valide";
+                       echo "non valide";
                        $enregistrement=false;
                    }
                    else if($employer['salaire']<25000 || $employer['salaire']>2000000){
-                    echo "le salaire doit être compris entre 25 000 et 2 000 000";
+                    echo "25 000 < salaire < 2 000 000";
                     $enregistrement=false;
                 }
               ?></span>
@@ -108,12 +103,12 @@ fclose($f);
                 <td>Telephon</td>
                 <td><input type="text" name="tel" placeholder="779530809" >
                 <span class="erreur"><?php if(!isset($employer['tel'])){}
-                  else if( $employer['tel']==""){
+                  else if( empty($employer['tel'])){
                     echo  $obligatoir;
                     $enregistrement=false;
                   }
                    else if(!preg_match("#^[7]{1}[7860]{1}[-: ]?[0-9]{3}[-: ]?[0-9]{2}[-: ]?[0-9]{2}$#",$employer['tel'])){
-                       echo "le telephon n'est pas valide";
+                       echo "non valide";
                        $enregistrement=false;
                    }
               ?></span>
@@ -150,18 +145,31 @@ fclose($f);
               </td>
 
             </tr>
-            <tr>
-                <td><input type="submit" value="Add" name="submit" ></td>
+            <tr><td></td>
+                <td><button type="submit"  name="submit" >Ajouter</button></td> 
             </tr>
-        </table>
-        </form>
+            <br><tr>
+            <td><button><a href="afficherEmployer.php">lister les employers </a></button></td>
+            </tr>
+        </table><br>
+        </form></div>
+        <div class="image">
+        <img src="../../image/logosa.jpeg" alt="logo" width="300px" height="500px"/></div>
         <?php 
+
          // ecrire sur le fichier
-    if($enregistrement){
-      $f=fopen("employer.txt","a+");
-     fwrite($f,json_encode($employer)."\n");
-      fclose($f);
-    }
+         if($enregistrement){
+          $f=fopen("employer.txt","a+");
+         fwrite($f,json_encode($employer)."\n");
+          fclose($f);
+        }
+//recuperer le contenudu  du fichier dans un tableau 
+$employers=array();
+$f = fopen("employer.txt","r");
+while(($ligne=fgets($f))){
+$employers[]=json_decode($ligne,true);
+}
+fclose($f);
     ?>
         <div class="t2">
         <table>

@@ -1,3 +1,6 @@
+<?php
+$cle=$_GET['cle'];
+?>
 <!DOCTYPE HTML>
 <html>
 <meta charset="utf-8"/>
@@ -5,7 +8,7 @@
 <!-- <link rel="stylesheet" href="css/style.css"/> -->
 <body>
 <div class="page">
-    <form method="post" action="supprimerEmployer.php?cle='<?php echo $_GET['cle'] ?>'">
+    <form method="post" action="supprimerEmployer.php?cle=<?php echo $cle ?>">
         <label>voulez-vous supprimer</label>
     <button><input type="submit" name="nom" value="non"/> </button>
     <button><input type="submit" name="oui" value="oui"/> </button>

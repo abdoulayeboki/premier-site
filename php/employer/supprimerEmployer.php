@@ -1,5 +1,5 @@
 <?php
-$cle= (int)$_GET['cle'];
+$cle=$_GET['cle'];
 $oui=$_POST['oui'];
 $non=$_POST['non'];
 $employers=array();

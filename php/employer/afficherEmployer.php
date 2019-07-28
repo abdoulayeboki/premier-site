@@ -11,11 +11,12 @@ fclose($f);
 <html>
 <meta charset="utf-8"/>
 <title>calculatrice</title>
- <link rel="stylesheet" href="css/style.css"/> 
+ <link rel="stylesheet" href="css/style1.css"/> 
 <body>
-<div class="page">
+<div class="page"> 
 <div class="t2">
         <table>
+            <caption><a  href="employer.php" ><img  src="../../image/retour.png" style="border-radius:15px;" height="30px" width="60px"/></a> les employers<br></caption>
         <thead>
                 <th>matricule</th>
                 <th>prenom</th>

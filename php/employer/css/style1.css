@@ -1,20 +1,22 @@
 body{
     background-color: #ede4e5;
 }
-form  {
+/* form  {
     margin-top: 2%;
      margin-right:2%;
      margin-left:2%;  
      margin: auto;
-     width:94%;
-     /* background-color: darkgrey; */
      padding: 2%;
      border-radius:4%;
+ } */
+ .page{
+     margin: auto;
+     width: 98%;
  }
 
  form   input[type="text"]{
-     width: 40%;
-     height: 25px;
+     width: 60%;
+     height: 30px;
      margin-bottom:25px;
      font-size:1.2em;
     
@@ -22,23 +24,58 @@ form  {
  .tabdynamique{
      color: darkblue;
  }
+  .t1 a,.image a{
+     text-decoration: none;
+     color: white;
+
+ }
+ .image{
+    /* display: inline-block;
+    width: 45%; */
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+ .image img{
+border-radius: 15px;
+box-shadow: 4px 4px 2px 2px #6495ed;
+} 
+.form{
+   /* display: inline-block;
+   width:50%; */
+   float: left;
+   margin-left: 5%;
+}
+  button{
+    background: darkblue;
+    height: 38px;
+    border: none;
+    color: white;
+    font-size: 1.4em;
+    border-radius:4px 4px 4px 4px;
+  /*  position: relative;
+    bottom:4px;*/
+}
  /* form  table tr td .select {
     margin-bottom:15px;
     background-color: aquamarine;
 
    
 } */
- /* form td{
-     font-size: 1.5em;
+  form td{
+     font-size: 1.1em;
      text-align: center;
- } */
- form   button[type="submit"]{
+ } 
+ /* form   button[type="submit"]{
     width: 20%;
     height: 45px;
     margin-bottom:25px;
     background:#4aaaff;
     border-radius: 10px;
    
+} */
+.t1 table{
+    width: 100%;
 }
  .t2 table {
     border: medium solid #6495ed;
