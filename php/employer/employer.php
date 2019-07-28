@@ -112,7 +112,7 @@ fclose($f);
                     echo  $obligatoir;
                     $enregistrement=false;
                   }
-                   else if(!preg_match("#^[7]{1}[786]{1}[-: ]?[0-9]{3}[-: ]?[0-9]{2}[-: ]?[0-9]{2}$#",$employer['tel'])){
+                   else if(!preg_match("#^[7]{1}[7860]{1}[-: ]?[0-9]{3}[-: ]?[0-9]{2}[-: ]?[0-9]{2}$#",$employer['tel'])){
                        echo "le telephon n'est pas valide";
                        $enregistrement=false;
                    }
@@ -187,9 +187,8 @@ fclose($f);
                   <td><?php echo $ligne['tel'] ?></td>
                   <td><?php echo $ligne['date'] ?></td>
                   <td><?php echo $ligne['email'] ?></td>
-                  <td><a href="supprimerEmployer.php?cle=<?php echo $cle ?>" 
-                  onclick=" return confirm('voulez-vous supprimer cet employer')">supprimer</a></td>
-                  <td><a href="editeEmployer.php?cle=<?php echo $cle ?>">editer</a></td> 
+                  <td><a href="editeEmployer.php?cle=<?php echo $cle ?>">editer</a></td>
+                  <td><a href="validerSuppression.php?cle=<?php echo $cle ?>">supprimer</a></td> 
                  </tr>
                  <?php   } ?>
             </tbody>
