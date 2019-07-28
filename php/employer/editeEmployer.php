@@ -1,5 +1,6 @@
 <?php
-
+$obligatoir="obligatoir!";
+$enregistrement=true;
 $cle=$_GET['cle'];
 $employers=array();
 $f = fopen("employer.txt","r");
@@ -16,7 +17,6 @@ $matricule=$employer['matricule'];
 $tel=$employer['tel'];
 $date=$employer['date'];
 $email=$employer['email'];
-//var_dump ($employer);
 fclose($f);
 
 
@@ -31,21 +31,14 @@ fclose($f);
     </head>
     <body>
      <div class="page">
-        <form method="post" action="editer.php?cle=<?php echo $cle ?>">
-                       
+       <div class="form">
+        <form method="post" action="editer.php?cle=<?php echo $cle ?>?enregistrement=<?php echo $enregistrement ?>">
+         <div class="t1">              
         <table >
             <tr>
                 <td>Matricule</td>
                 <td><input type="text" name="matricule" readonly="true" value="<?php 
-                $employers=array();
-                $f = fopen("employer.txt","r+");
-                while(($ligne=fgets($f))){
-                $employers[]=json_decode($ligne,true);
-                }
-                fclose($f);
-                $nbr=count($employers)+1;
-                $c=sprintf("%05d",$nbr);
-                echo "EM-".$c;
+                echo $matricule;
                 ?>"/></td>
             </tr>
             <tr>
@@ -144,13 +137,15 @@ fclose($f);
 
             </tr>
             <tr>
-                <td><input type="submit" value="Add" name="submit" ></td>
+                <td><button type="submit"  name="submit">Ajouter</button></td>
             </tr>
             <tr>
                 <td><button><a href="afficherEmployer.php">lister les employers </a></button></td>
             </tr>
-        </table>
-</form>
+        </table></div>
+</form></div>
+<div class="image">
+        <img src="../../image/logosa.jpeg" alt="logo" width="400px" height="400px"/></div>
      </div>
 </body>
 </html> 
