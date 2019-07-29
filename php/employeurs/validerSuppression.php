@@ -10,8 +10,8 @@ $cle=$_GET['cle'];
 <div class="page">
     <form method="post" action="supprimerEmployer.php?cle=<?php echo $cle ?>">
         <label>voulez-vous supprimer</label>
-    <button><input type="submit" name="nom" value="non"/> </button>
-    <button><input type="submit" name="oui" value="oui"/> </button>
+    <button>non </button>
+    <button name="oui" value="oui">oui </button>
     </form>
 </div>    
 </body>
